@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>
-  <router-link to="frist">跳转至HelloVue</router-link>
+  <router-link to="day01">跳转至HelloVue</router-link>
     </h1>
   </div>
 </template>

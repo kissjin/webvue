@@ -1,7 +1,10 @@
 <template>
-  <h1>
- <router-link to="frist">跳转至HelloVue</router-link>
-</h1>
+  <div>
+    <Alert show-icon>
+        Custom icon
+        <Icon type="ios-bulb-outline" slot="icon"></Icon>
+    </Alert>
+  </div>
 </template>
 
 <script type="text/javascript">
