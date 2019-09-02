@@ -8,5 +8,19 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <button id="J_btn" class="btn btn-default">支付</button>
   </body>
+  <script src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js"></script>
+  <script>
+ var btn = document.querySelector('#J_btn');
+  btn.addEventListener('click', function(){
+    console.log('oooo',ap)
+    ap.tradePay({
+      tradeNO: '2500000209975226487'
+    }, function(res){
+      console.log(res)
+      ap.alert(res.resultCode);
+    });
+  });
+  </script>
 </html>
